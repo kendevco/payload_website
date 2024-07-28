@@ -48,6 +48,8 @@ const generateURL: GenerateURL<Post | Page> = ({ doc }) => {
     : process.env.NEXT_PUBLIC_SERVER_URL
 }
 
+console.log('VERCEL_BLOB_READ_WRITE_TOKEN:', process.env.VERCEL_BLOB_READ_WRITE_TOKEN)
+
 export default buildConfig({
   admin: {
     components: {
