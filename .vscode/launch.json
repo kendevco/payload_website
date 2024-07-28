@@ -5,6 +5,30 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Next.js: Server",
+      "type": "node",
+      "request": "launch",
+      "args": ["${workspaceFolder}/node_modules/next/dist/bin/next", "dev"],
+      "runtimeArgs": ["--inspect"],
+      "env": {
+        "NODE_OPTIONS": "--inspect"
+      },
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "sourceMaps": true
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Next.js: Chrome",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/",
+      "runtimeExecutable": "C:/Program Files/Google/Chrome/Application/chrome.exe",
+      "runtimeArgs": [
+        "--remote-debugging-port=9222",
+        "--user-data-dir=${workspaceFolder}/.vscode/chrome"
+      ]
+    },
     {
       "name": "Python: Current File",
       "type": "python",
