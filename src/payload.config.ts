@@ -1,6 +1,6 @@
+// This is a modification of the file so I can check it back in to make a new push.
 // storage-adapter-import-placeholder
-import { mongooseAdapter } from '@payloadcms/db-mongodb' // database-adapter-import
-
+import { mongooseAdapter } from '@payloadcms/db-mongodb' // database-adapter-import\
 import { payloadCloudPlugin } from '@payloadcms/plugin-cloud'
 import { formBuilderPlugin } from '@payloadcms/plugin-form-builder'
 import { nestedDocsPlugin } from '@payloadcms/plugin-nested-docs'
