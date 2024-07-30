@@ -48,6 +48,17 @@ const generateURL: GenerateURL<Post | Page> = ({ doc }) => {
     : process.env.NEXT_PUBLIC_SERVER_URL
 }
 
+console.log('Environment Variables:')
+console.log('PORT:', process.env.PORT)
+console.log('DATABASE_URI:', process.env.DATABASE_URI)
+console.log('PAYLOAD_SECRET:', process.env.PAYLOAD_SECRET)
+console.log('PAYLOAD_PUBLIC_SERVER_URL:', process.env.PAYLOAD_PUBLIC_SERVER_URL)
+console.log('NEXT_PUBLIC_SERVER_URL:', process.env.NEXT_PUBLIC_SERVER_URL)
+console.log('NEXT_PUBLIC_IS_LIVE:', process.env.NEXT_PUBLIC_IS_LIVE)
+console.log('PAYLOAD_PUBLIC_DRAFT_SECRET:', process.env.PAYLOAD_PUBLIC_DRAFT_SECRET)
+console.log('NEXT_PRIVATE_DRAFT_SECRET:', process.env.NEXT_PRIVATE_DRAFT_SECRET)
+console.log('REVALIDATION_KEY:', process.env.REVALIDATION_KEY)
+console.log('NEXT_PRIVATE_REVALIDATION_KEY:', process.env.NEXT_PRIVATE_REVALIDATION_KEY)
 console.log('VERCEL_BLOB_READ_WRITE_TOKEN:', process.env.VERCEL_BLOB_READ_WRITE_TOKEN)
 
 export default buildConfig({
@@ -195,7 +206,7 @@ export default buildConfig({
       collections: {
         [Media.slug]: true,
       },
-      token: process.env.VERCEL_BLOB_READ_WRITE_TOKEN || '',
+      token: process.env.VERCEL_BLOB_READ_WRITE_TOKEN,
     }),
   ],
   secret: process.env.PAYLOAD_SECRET,
