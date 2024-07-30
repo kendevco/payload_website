@@ -59,7 +59,7 @@ console.log('PAYLOAD_PUBLIC_DRAFT_SECRET:', process.env.PAYLOAD_PUBLIC_DRAFT_SEC
 console.log('NEXT_PRIVATE_DRAFT_SECRET:', process.env.NEXT_PRIVATE_DRAFT_SECRET)
 console.log('REVALIDATION_KEY:', process.env.REVALIDATION_KEY)
 console.log('NEXT_PRIVATE_REVALIDATION_KEY:', process.env.NEXT_PRIVATE_REVALIDATION_KEY)
-console.log('VERCEL_BLOB_READ_WRITE_TOKEN:', process.env.VERCEL_BLOB_READ_WRITE_TOKEN)
+console.log('BLOB_READ_WRITE_TOKEN:', process.env.BLOB_READ_WRITE_TOKEN)
 
 export default buildConfig({
   admin: {
@@ -206,7 +206,7 @@ export default buildConfig({
       collections: {
         [Media.slug]: true,
       },
-      token: process.env.VERCEL_BLOB_READ_WRITE_TOKEN,
+      token: process.env.BLOB_READ_WRITE_TOKEN,
     }),
   ],
   secret: process.env.PAYLOAD_SECRET,
