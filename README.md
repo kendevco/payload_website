@@ -1,78 +1,104 @@
-# Payload Website Template
+# FolioMark5: Ken Courtney's Portfolio and Project Showcase
 
-This is the official [Payload Website Template](https://github.com/payloadcms/payload/blob/main/templates/website). Use it to power websites, blogs, or portfolios from small to enterprise. This repo includes a fully-working backend, enterprise-grade admin panel, and a beautifully designed, production-ready website.
+Welcome to the repository for [folio.kendev.co](https://folio.kendev.co), my personal portfolio and project showcase built with Payload CMS.
 
-This template is right for you if you are working on:
+## About This Project
 
+<<<<<<< HEAD
 - A personal or enterprise-grade website, blog, or portfolio
 - A content publishing platform with a fully featured publication workflow
 - Exploring the capabilities of Payload
+=======
+FolioMark5 is a multifaceted platform that serves as my hobby site, portfolio, and a testbed for various web development experiments. Built on Payload CMS (beta release .67), this project aims to showcase the capabilities of modern content management systems while providing a space for personal expression and project documentation.
+>>>>>>> 76477520984a3cc317bbdaa73e6ffcbcf4001dc6
 
-Core features:
+### Key Features
 
-- [Pre-configured Payload Config](#how-it-works)
-- [Authentication](#users-authentication)
-- [Access Control](#access-control)
-- [Layout Builder](#layout-builder)
-- [Draft Preview](#draft-preview)
-- [Live Preview](#live-preview)
-- [Redirects](#redirects)
-- [SEO](#seo)
-- [Website](#website)
+- **Portfolio Showcase**: Highlighting my development projects and skills.
+- **Prison Book Log**: A migrated application listing books I've read, including dates and personal notes.
+- **Blog**: A space for sharing thoughts, experiences, and technical insights.
+- **Affiliate Links**: Curated links to products and services I recommend.
+- **Custom Payload CMS Blocks**: Utilizing both default and custom-built content blocks.
 
-## Quick Start
+## Technical Stack
 
-To spin up this example locally, follow these steps:
+- **CMS**: Payload CMS (Beta Release .67)
+- **Frontend**: Next.js
+- **Styling**: TailwindCSS
+- **Deployment**: [Your deployment platform]
 
-### Clone
+## Open Source Contribution
 
-If you have not done so already, you need to have standalone copy of this repo on your machine. If you've already cloned this repo, skip to [Development](#development).
+This repository is public as a way to give back to the Payload CMS community. Feel free to explore, fork, or submit pull requests if you find ways to improve the project or have suggestions.
 
-#### Method 1 (recommended)
+## Prison Book Log
 
-Go to Payload Cloud and [clone this template](https://payloadcms.com/new/clone/website). This will create a new repository on your GitHub account with this template's code which you can then clone to your own machine.
+One of the unique features of this site is the Prison Book Log, a personal project documenting my reading journey. This feature showcases:
 
-#### Method 2
+- Custom Payload collection for book entries
+- Detailed logging including read dates and personal reflections
+- Integration with the main portfolio site
 
-Use the `create-payload-app` CLI to clone this template directly to your machine:
+## Custom Blocks
 
+<<<<<<< HEAD
 ```bash
 pnpx create-payload-app my-project -t website
 ```
+=======
+This project utilizes a variety of custom blocks, including:
+>>>>>>> 76477520984a3cc317bbdaa73e6ffcbcf4001dc6
 
-#### Method 3
+- Default Payload CMS blocks
+- Custom-built blocks for specific functionalities
+- Blocks adapted from the Payload CMS public website repository
 
-Use the `git` CLI to clone this template directly to your machine:
+## Getting Started
 
+<<<<<<< HEAD
 ```bash
 git clone -n --depth=1 --filter=tree:0 https://github.com/payloadcms/payload my-project && cd my-project && git sparse-checkout set --no-cone templates/website && git checkout && rm -rf .git && git init && git add . && git mv -f templates/website/{.,}* . && git add . && git commit -m "Initial commit"
 ```
+=======
+To run this project locally:
+>>>>>>> 76477520984a3cc317bbdaa73e6ffcbcf4001dc6
 
-### Development
+1. Clone the repository
+2. Install dependencies: `npm install` or `yarn install`
+3. Set up your environment variables (refer to `.env.example`)
+4. Run the development server: `npm run dev` or `yarn dev`
 
-1. First [clone the repo](#clone) if you have not done so already
-1. `cd my-project && cp .env.example .env` to copy the example environment variables
-1. `pnpm install && pnpm dev` to install dependencies and start the dev server
-1. open `http://localhost:3000` to open the app in your browser
+## Contributing
 
-That's it! Changes made in `./src` will be reflected in your app. Follow the on-screen instructions to login and create your first admin user. Then check out [Production](#production) once you're ready to build and serve your app, and [Deployment](#deployment) when you're ready to go live.
+While this is primarily a personal project, I'm open to contributions, especially those that could benefit the broader Payload CMS community. Please feel free to open issues or submit pull requests.
 
-## How it works
+## Acknowledgements
 
-The Payload config is tailored specifically to the needs of most websites. It is pre-configured in the following ways:
+- The Payload CMS team for their excellent work and open-source contributions
+- [Any other acknowledgements or credits]
 
-### Collections
+## Contact
 
+<<<<<<< HEAD
 See the [Collections](https://payloadcms.com/docs/configuration/collections) docs for details on how to extend this functionality.
+=======
+For any queries or collaborations, feel free to reach out:
+>>>>>>> 76477520984a3cc317bbdaa73e6ffcbcf4001dc6
 
-- #### Users (Authentication)
+- [Your preferred contact method]
+- [Social media links]
 
-  Users are auth-enabled collections that have access to the admin panel and unpublished content. See [Access Control](#access-control) for more details.
+## License
 
+<<<<<<< HEAD
   For additional help, see the official [Auth Example](https://github.com/payloadcms/payload/tree/examples/auth) or the [Authentication](https://payloadcms.com/docs/authentication/overview#authentication-overview) docs.
+=======
+[Your chosen license]
+>>>>>>> 76477520984a3cc317bbdaa73e6ffcbcf4001dc6
 
-- #### Posts
+---
 
+<<<<<<< HEAD
   Posts are used to generated blog posts, news articles, or any other type of content that is published over time. All posts are layout builder enabled so you can generate unique layouts for each post using layout-building blocks, see [Layout Builder](#layout-builder) for more details. Posts are also draft-enabled so you can preview them before publishing them to your website, see [Draft Preview](#draft-preview) for more details.
 
 - #### Pages
@@ -272,3 +298,6 @@ You can also deploy your app manually, check out the [deployment documentation](
 ## Questions
 
 If you have any issues or questions, reach out to us on [Discord](https://discord.com/invite/payload) or start a [GitHub discussion](https://github.com/payloadcms/payload/discussions).
+=======
+This project is continuously evolving. Check back often for updates and new features!
+>>>>>>> 76477520984a3cc317bbdaa73e6ffcbcf4001dc6
